@@ -1,95 +1,168 @@
-<div class="pricing-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Server Hosting — SkullHost</title>
+  <meta name="description" content="Optimized Minecraft server hosting with instant setup, mod support, and DDoS protection. From $2/month.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☠</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- BASIC -->
-<div class="glass-card pricing-card reveal" style="border-color:rgba(34,139,34,0.15);">
-<div class="pricing-plan-name">Minecraft Basic</div>
-<div class="pricing-plan-desc">Starter Minecraft servers</div>
+<div class="loader-wrapper"><div class="loader"><div class="loader-skull">☠</div><div class="loader-bar"><div class="loader-bar-inner"></div></div></div></div>
 
-<div class="pricing-amount">
-<span class="pricing-currency" style="color:#22c55e;">$</span>
-<span class="pricing-value">2</span>
-<span class="pricing-period">/mo</span>
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo"><span class="skull-icon">☠</span><span>Skull<span class="brand-accent">Host</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown"><a href="#" class="nav-dropdown-toggle active">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="nav-dropdown-menu"><a href="vps.html"><span class="dd-icon">⚡</span> Cloud VPS</a><a href="vds.html"><span class="dd-icon">🖥️</span> VDS</a><a href="minecraft-hosting.html"><span class="dd-icon">🎮</span> Minecraft</a><a href="bot-hosting.html"><span class="dd-icon">🤖</span> Bot Hosting</a><a href="ai-hosting.html"><span class="dd-icon">🧠</span> AI Hosting</a><a href="web-hosting.html"><span class="dd-icon">🌐</span> Web Hosting</a><a href="cloud-hosting.html"><span class="dd-icon">☁️</span> Cloud</a><a href="dedicated.html"><span class="dd-icon">🏗️</span> Dedicated</a></div>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary btn-sm" target="_blank">Client Area</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">Deploy Server</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">🏠 Home</a><div class="mobile-menu-section">Services</div>
+  <a href="vps.html">⚡ Cloud VPS</a><a href="vds.html">🖥️ VDS</a><a href="minecraft-hosting.html">🎮 Minecraft</a><a href="bot-hosting.html">🤖 Bots</a><a href="ai-hosting.html">🧠 AI</a><a href="web-hosting.html">🌐 Web</a><a href="cloud-hosting.html">☁️ Cloud</a><a href="dedicated.html">🏗️ Dedicated</a>
+  <div class="mobile-menu-section">Company</div><a href="pricing.html">💰 Pricing</a><a href="about.html">👥 About</a><a href="contact.html">📬 Contact</a>
+  <div style="padding:16px;"><a href="https://clientarea.skullhost.cloud" class="btn btn-primary" style="width:100%;" target="_blank">Client Area</a></div>
 </div>
 
-<ul class="pricing-features">
-<li><span class="check" style="color:#22c55e;">✓</span> CPU: 100%</li>
-<li><span class="check" style="color:#22c55e;">✓</span> RAM: 4 GB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Disk: 1TB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Bandwidth: 1TB Unmetered</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Location: UAE, Dubai</li>
-<li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection Included</li>
-</ul>
+<!-- PAGE HERO with MC theme -->
+<section class="page-hero" style="background: linear-gradient(180deg, rgba(34,139,34,0.05) 0%, var(--bg-primary) 100%);">
+  <div style="font-size:56px; margin-bottom:16px; position:relative; z-index:1;">🎮</div>
+  <h1>Minecraft Server <span style="background: linear-gradient(135deg, #22c55e, #16a34a); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Hosting</span></h1>
+  <p>Lag-free Minecraft servers with one-click mod support, automatic backups, and instant setup. Play your way.</p>
+</section>
 
-<a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%; border-color:rgba(34,139,34,0.3); color:#22c55e;" target="_blank">Order Now</a>
-</div>
+<!-- MC FEATURES -->
+<section class="section-sm">
+  <div class="container">
+    <div class="specs-grid">
+      <div class="glass-card spec-card reveal" style="border-color: rgba(34,139,34,0.15);">
+        <div class="spec-icon" style="background: rgba(34,139,34,0.08); border-color:rgba(34,139,34,0.2);">⚡</div>
+        <div class="spec-info"><h3>Instant Setup</h3><p>Your Minecraft server is ready in seconds after payment.</p></div>
+      </div>
+      <div class="glass-card spec-card reveal" style="border-color: rgba(34,139,34,0.15);">
+        <div class="spec-icon" style="background: rgba(34,139,34,0.08); border-color:rgba(34,139,34,0.2);">🔧</div>
+        <div class="spec-info"><h3>Mod Support</h3><p>One-click installation for Forge, Fabric, Spigot, Paper, and more.</p></div>
+      </div>
+      <div class="glass-card spec-card reveal" style="border-color: rgba(34,139,34,0.15);">
+        <div class="spec-icon" style="background: rgba(34,139,34,0.08); border-color:rgba(34,139,34,0.2);">🛡️</div>
+        <div class="spec-info"><h3>DDoS Protected</h3><p>Advanced protection keeps your server online during attacks.</p></div>
+      </div>
+      <div class="glass-card spec-card reveal" style="border-color: rgba(34,139,34,0.15);">
+        <div class="spec-icon" style="background: rgba(34,139,34,0.08); border-color:rgba(34,139,34,0.2);">💾</div>
+        <div class="spec-info"><h3>NVMe Storage</h3><p>Ultra-fast chunk loading and world generation on NVMe SSDs.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- PRO -->
-<div class="glass-card pricing-card popular reveal" style="border-color:#22c55e;">
-<div class="pricing-plan-name">Minecraft Pro</div>
-<div class="pricing-plan-desc">Growing community servers</div>
+<!-- MC PLANS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" style="color:#22c55e;">🎮 Plans</div>
+      <h2 class="section-title">Minecraft Hosting Plans</h2>
+      <p class="section-desc">Choose the perfect plan for your Minecraft server. All plans include DDoS protection and mod support.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="glass-card pricing-card reveal" style="border-color:rgba(34,139,34,0.15);">
+        <div class="pricing-plan-name">Minecraft Basic</div>
+        <div class="pricing-plan-desc">Small survival servers</div>
+        <div class="pricing-amount"><span class="pricing-currency" style="color:#22c55e;">$</span><span class="pricing-value">2</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check" style="color:#22c55e;">✓</span> 2 GB RAM</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> Up to 10 Players</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> NVMe SSD Storage</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> Mod Support</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%; border-color:rgba(34,139,34,0.3); color:#22c55e;" target="_blank">Order Now</a>
+      </div>
+      <div class="glass-card pricing-card popular reveal" style="border-color:#22c55e;">
+        <div class="pricing-plan-name">Minecraft Pro</div>
+        <div class="pricing-plan-desc">Community servers</div>
+        <div class="pricing-amount"><span class="pricing-currency" style="color:#22c55e;">$</span><span class="pricing-value">5</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check" style="color:#22c55e;">✓</span> 4 GB RAM</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> Up to 30 Players</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> NVMe SSD Storage</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> Mod Support</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-primary" style="width:100%; background:linear-gradient(135deg,#22c55e,#16a34a);" target="_blank">Order Now</a>
+      </div>
+      <div class="glass-card pricing-card reveal" style="border-color:rgba(34,139,34,0.15);">
+        <div class="pricing-plan-name">Minecraft Extreme</div>
+        <div class="pricing-plan-desc">Large modded servers</div>
+        <div class="pricing-amount"><span class="pricing-currency" style="color:#22c55e;">$</span><span class="pricing-value">9</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check" style="color:#22c55e;">✓</span> 8 GB RAM</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> Up to 80 Players</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> NVMe SSD Storage</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> Mod Support</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%; border-color:rgba(34,139,34,0.3); color:#22c55e;" target="_blank">Order Now</a>
+      </div>
+      <div class="glass-card pricing-card reveal" style="border-color:rgba(34,139,34,0.15);">
+        <div class="pricing-plan-name">Minecraft Network</div>
+        <div class="pricing-plan-desc">Multi-server networks</div>
+        <div class="pricing-amount"><span class="pricing-currency" style="color:#22c55e;">$</span><span class="pricing-value">15</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check" style="color:#22c55e;">✓</span> 16 GB RAM</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> Large Networks</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> NVMe SSD Storage</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> BungeeCord / Velocity</li>
+          <li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%; border-color:rgba(34,139,34,0.3); color:#22c55e;" target="_blank">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="pricing-amount">
-<span class="pricing-currency" style="color:#22c55e;">$</span>
-<span class="pricing-value">4</span>
-<span class="pricing-period">/mo</span>
-</div>
+<!-- CTA -->
+<section class="section cta-section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-box reveal" style="background: linear-gradient(135deg, rgba(34,139,34,0.06), rgba(15,15,30,0.8));">
+      <h2>Ready to Build Your Minecraft Empire?</h2>
+      <p>Get your server up and running in seconds. No lag, no limits.</p>
+      <div class="cta-buttons">
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#22c55e,#16a34a);" target="_blank">🎮 Start Playing</a>
+        <a href="https://discord.gg/6u8D3s6azJ" class="btn btn-outline btn-lg" target="_blank">Join Community</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-<ul class="pricing-features">
-<li><span class="check" style="color:#22c55e;">✓</span> CPU: 150%</li>
-<li><span class="check" style="color:#22c55e;">✓</span> RAM: 8 GB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Disk: 1TB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Bandwidth: 1TB Unmetered</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Location: UAE, Dubai</li>
-<li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection Included</li>
-</ul>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="navbar-logo" style="font-size:20px;"><span class="skull-icon">☠</span><span>Skull<span class="brand-accent">Host</span></span></a><p>Premium cloud hosting powered by enterprise hardware.</p></div>
+      <div class="footer-col"><h4>Services</h4><a href="vps.html">Cloud VPS</a><a href="vds.html">VDS</a><a href="minecraft-hosting.html">Minecraft</a><a href="bot-hosting.html">Bots</a><a href="ai-hosting.html">AI</a><a href="web-hosting.html">Web</a><a href="dedicated.html">Dedicated</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="knowledgebase.html">Knowledgebase</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
+      <div class="footer-col"><h4>Connect</h4><a href="https://discord.gg/6u8D3s6azJ" target="_blank">Discord</a><a href="https://clientarea.skullhost.cloud" target="_blank">Client Area</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 SkullHost. All rights reserved.</span><div class="footer-bottom-links"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div></div>
+  </div>
+</footer>
 
-<a href="https://clientarea.skullhost.cloud" class="btn btn-primary" style="width:100%; background:linear-gradient(135deg,#22c55e,#16a34a);" target="_blank">Order Now</a>
-</div>
-
-<!-- EXTREME -->
-<div class="glass-card pricing-card reveal" style="border-color:rgba(34,139,34,0.15);">
-<div class="pricing-plan-name">Minecraft Extreme</div>
-<div class="pricing-plan-desc">High performance servers</div>
-
-<div class="pricing-amount">
-<span class="pricing-currency" style="color:#22c55e;">$</span>
-<span class="pricing-value">6</span>
-<span class="pricing-period">/mo</span>
-</div>
-
-<ul class="pricing-features">
-<li><span class="check" style="color:#22c55e;">✓</span> CPU: 200%</li>
-<li><span class="check" style="color:#22c55e;">✓</span> RAM: 12 GB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Disk: 1TB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Bandwidth: 1TB Unmetered</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Location: UAE, Dubai</li>
-<li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection Included</li>
-</ul>
-
-<a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%; border-color:rgba(34,139,34,0.3); color:#22c55e;" target="_blank">Order Now</a>
-</div>
-
-<!-- NETWORK -->
-<div class="glass-card pricing-card reveal" style="border-color:rgba(34,139,34,0.15);">
-<div class="pricing-plan-name">Minecraft Network</div>
-<div class="pricing-plan-desc">Large community networks</div>
-
-<div class="pricing-amount">
-<span class="pricing-currency" style="color:#22c55e;">$</span>
-<span class="pricing-value">8</span>
-<span class="pricing-period">/mo</span>
-</div>
-
-<ul class="pricing-features">
-<li><span class="check" style="color:#22c55e;">✓</span> CPU: 250%</li>
-<li><span class="check" style="color:#22c55e;">✓</span> RAM: 16 GB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Disk: 1TB</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Bandwidth: 1TB Unmetered</li>
-<li><span class="check" style="color:#22c55e;">✓</span> Location: UAE, Dubai</li>
-<li><span class="check" style="color:#22c55e;">✓</span> DDoS Protection Included</li>
-</ul>
-
-<a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%; border-color:rgba(34,139,34,0.3); color:#22c55e;" target="_blank">Order Now</a>
-</div>
-
-</div>
+<script src="script.js"></script>
+</body>
+</html>
