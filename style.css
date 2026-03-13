@@ -1482,3 +1482,74 @@ body {
     padding: 140px 16px 60px;
   }
 }
+
+/* GAME SERVERS PAGE */
+
+.game-hero{
+background:#0b0b0f;
+padding:120px 20px;
+text-align:center;
+}
+
+.game-hero h1{
+font-size:48px;
+color:#1e90ff;
+margin-bottom:10px;
+}
+
+.game-hero p{
+color:#bbb;
+font-size:18px;
+}
+
+/* GRID */
+
+.game-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:80px 10%;
+background:#050507;
+}
+
+/* CARD */
+
+.game-card{
+background:#111118;
+border:1px solid rgba(30,144,255,0.2);
+border-radius:12px;
+padding:30px;
+text-align:center;
+transition:0.3s;
+}
+
+.game-card:hover{
+transform:translateY(-6px);
+border-color:#1e90ff;
+box-shadow:0 0 20px rgba(30,144,255,0.4);
+}
+
+.game-card h3{
+color:white;
+margin-bottom:10px;
+}
+
+.game-card p{
+color:#aaa;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.game-card a{
+display:inline-block;
+padding:10px 20px;
+background:#1e90ff;
+color:white;
+text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+}
+
+.game-card a:hover{
+background:#0f6ed4;
+}
