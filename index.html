@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkullHost — Powerful Hosting Without Limits</title>
+  <meta name="description" content="Deploy high-performance VPS, VDS, Minecraft servers, AI infrastructure, and cloud hosting with SkullHost's global network.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☠</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader-wrapper">
+  <div class="loader">
+    <div class="loader-skull">☠</div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <span class="skull-icon">☠</span>
+      <span>Skull<span class="brand-accent">Host</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle">
+          Services
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="vps.html"><span class="dd-icon">⚡</span> Cloud VPS Hosting</a>
+          <a href="vds.html"><span class="dd-icon">🖥️</span> VDS Hosting</a>
+          <a href="minecraft-hosting.html"><span class="dd-icon">🎮</span> Minecraft Hosting</a>
+          <a href="bot-hosting.html"><span class="dd-icon">🤖</span> Discord Bot Hosting</a>
+          <a href="ai-hosting.html"><span class="dd-icon">🧠</span> AI Hosting</a>
+          <a href="web-hosting.html"><span class="dd-icon">🌐</span> Web Hosting</a>
+          <a href="cloud-hosting.html"><span class="dd-icon">☁️</span> Cloud Hosting</a>
+          <a href="dedicated.html"><span class="dd-icon">🏗️</span> Dedicated Servers</a>
+        </div>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary btn-sm" target="_blank">Client Area</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">Deploy Server</a>
+    </div>
+
+    <button class="mobile-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="index.html">🏠 Home</a>
+  <div class="mobile-menu-section">Services</div>
+  <a href="vps.html">⚡ Cloud VPS Hosting</a>
+  <a href="vds.html">🖥️ VDS Hosting</a>
+  <a href="minecraft-hosting.html">🎮 Minecraft Hosting</a>
+  <a href="bot-hosting.html">🤖 Discord Bot Hosting</a>
+  <a href="ai-hosting.html">🧠 AI Hosting</a>
+  <a href="web-hosting.html">🌐 Web Hosting</a>
+  <a href="cloud-hosting.html">☁️ Cloud Hosting</a>
+  <a href="dedicated.html">🏗️ Dedicated Servers</a>
+  <div class="mobile-menu-section">Company</div>
+  <a href="pricing.html">💰 Pricing</a>
+  <a href="about.html">👥 About Us</a>
+  <a href="contact.html">📬 Contact</a>
+  <a href="knowledgebase.html">📖 Knowledgebase</a>
+  <a href="https://status.skullhost.cloud" target="_blank">📊 Status</a>
+  <div style="padding: 16px;">
+    <a href="https://clientarea.skullhost.cloud" class="btn btn-primary" style="width:100%;margin-bottom:10px;" target="_blank">Client Area</a>
+    <a href="https://discord.gg/6u8D3s6azJ" class="btn btn-secondary" style="width:100%;" target="_blank">Join Discord</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      All systems operational
+    </div>
+    <h1>Powerful Hosting <br><span class="gradient-text">Without Limits</span></h1>
+    <p>Deploy high-performance VPS, VDS, Minecraft servers, AI infrastructure, and cloud hosting with SkullHost's global network.</p>
+    <div class="hero-buttons">
+      <a href="pricing.html" class="btn btn-primary btn-lg">🚀 Deploy Server</a>
+      <a href="#pricing-overview" class="btn btn-outline btn-lg">View Pricing</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-count="99" data-suffix=".99%">0%</div>
+        <div class="hero-stat-label">Uptime SLA</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-count="2" data-suffix=" Locations">0</div>
+        <div class="hero-stat-label">Global Datacenters</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-count="10" data-suffix=" Gbps">0</div>
+        <div class="hero-stat-label">Network Uplink</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value" data-prefix="<" data-count="60" data-suffix="s">0</div>
+        <div class="hero-stat-label">Deployment Time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">⚙️ Infrastructure</div>
+      <h2 class="section-title">Enterprise-Grade Infrastructure</h2>
+      <p class="section-desc">Built on cutting-edge hardware and optimized for maximum performance, reliability, and speed.</p>
+    </div>
+    <div class="features-grid">
+      <div class="glass-card feature-card reveal reveal-delay-1">
+        <div class="feature-icon">💾</div>
+        <h3>NVMe SSD Storage</h3>
+        <p>Enterprise-grade NVMe drives delivering ultra-fast read/write speeds for all workloads.</p>
+      </div>
+      <div class="glass-card feature-card reveal reveal-delay-2">
+        <div class="feature-icon">🔲</div>
+        <h3>AMD EPYC CPUs</h3>
+        <p>Powered by AMD EPYC 7502, 7642, and Ryzen 9 processors for unmatched computing power.</p>
+      </div>
+      <div class="glass-card feature-card reveal reveal-delay-3">
+        <div class="feature-icon">✅</div>
+        <h3>99.99% Uptime</h3>
+        <p>Industry-leading reliability backed by redundant systems and our uptime guarantee.</p>
+      </div>
+      <div class="glass-card feature-card reveal reveal-delay-1">
+        <div class="feature-icon">🌍</div>
+        <h3>Global Datacenters</h3>
+        <p>Strategically located datacenters in Dubai, UAE and Frankfurt, Germany for low latency worldwide.</p>
+      </div>
+      <div class="glass-card feature-card reveal reveal-delay-2">
+        <div class="feature-icon">🛡️</div>
+        <h3>DDoS Protection</h3>
+        <p>Advanced Layer 3 and Layer 7 DDoS mitigation to keep your services online 24/7.</p>
+      </div>
+      <div class="glass-card feature-card reveal reveal-delay-3">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Deployment</h3>
+        <p>Automated provisioning gets your server online in under 60 seconds after payment.</p>
+      </div>
+      <div class="glass-card feature-card reveal reveal-delay-2">
+        <div class="feature-icon">🎧</div>
+        <h3>24/7 Support</h3>
+        <p>Our expert team is available around the clock via tickets and Discord to assist you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">🚀 Services</div>
+      <h2 class="section-title">Hosting Solutions for Every Need</h2>
+      <p class="section-desc">From lightweight bots to full dedicated servers — we've got the perfect plan for your project.</p>
+    </div>
+    <div class="features-grid">
+      <a href="vps.html" class="glass-card feature-card reveal reveal-delay-1" style="text-decoration:none; color:inherit;">
+        <div class="feature-icon">⚡</div>
+        <h3>Cloud VPS</h3>
+        <p>High-performance virtual private servers starting at just $3/month with full root access.</p>
+      </a>
+      <a href="vds.html" class="glass-card feature-card reveal reveal-delay-2" style="text-decoration:none; color:inherit;">
+        <div class="feature-icon">🖥️</div>
+        <h3>VDS Hosting</h3>
+        <p>Dedicated virtual resources for demanding applications. Guaranteed CPU and RAM allocation.</p>
+      </a>
+      <a href="minecraft-hosting.html" class="glass-card feature-card reveal reveal-delay-3" style="text-decoration:none; color:inherit;">
+        <div class="feature-icon">🎮</div>
+        <h3>Minecraft Hosting</h3>
+        <p>Optimized Minecraft servers with one-click mod support and instant setup from $2/month.</p>
+      </a>
+      <a href="bot-hosting.html" class="glass-card feature-card reveal reveal-delay-1" style="text-decoration:none; color:inherit;">
+        <div class="feature-icon">🤖</div>
+        <h3>Bot Hosting</h3>
+        <p>Keep your Discord bots running 24/7 with reliable and affordable bot hosting.</p>
+      </a>
+      <a href="ai-hosting.html" class="glass-card feature-card reveal reveal-delay-2" style="text-decoration:none; color:inherit;">
+        <div class="feature-icon">🧠</div>
+        <h3>AI Hosting</h3>
+        <p>Scalable infrastructure optimized for AI/ML workloads with high-memory configurations.</p>
+      </a>
+      <a href="web-hosting.html" class="glass-card feature-card reveal reveal-delay-3" style="text-decoration:none; color:inherit;">
+        <div class="feature-icon">🌐</div>
+        <h3>Web Hosting</h3>
+        <p>Fast and secure website hosting with SSL, email, and one-click CMS installation.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CLOUD VPS PRICING PREVIEW -->
+<section class="section" id="pricing-overview">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">💰 Pricing</div>
+      <h2 class="section-title">Cloud VPS Plans</h2>
+      <p class="section-desc">Powerful virtual servers with NVMe storage and full root access. Scale up anytime.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- Cloud S -->
+      <div class="glass-card pricing-card reveal reveal-delay-1">
+        <div class="pricing-plan-name">Cloud S</div>
+        <div class="pricing-plan-desc">Perfect for small projects</div>
+        <div class="pricing-amount">
+          <span class="pricing-currency">$</span>
+          <span class="pricing-value">3</span>
+          <span class="pricing-period">/mo</span>
+        </div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 2 GB RAM</li>
+          <li><span class="check">✓</span> 1 vCPU Core</li>
+          <li><span class="check">✓</span> 25 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%;" target="_blank">Deploy Now</a>
+      </div>
+      <!-- Cloud M -->
+      <div class="glass-card pricing-card popular reveal reveal-delay-2">
+        <div class="pricing-plan-name">Cloud M</div>
+        <div class="pricing-plan-desc">Best for growing apps</div>
+        <div class="pricing-amount">
+          <span class="pricing-currency">$</span>
+          <span class="pricing-value">5</span>
+          <span class="pricing-period">/mo</span>
+        </div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 4 GB RAM</li>
+          <li><span class="check">✓</span> 2 vCPU Cores</li>
+          <li><span class="check">✓</span> 50 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-primary" style="width:100%;" target="_blank">Deploy Now</a>
+      </div>
+      <!-- Cloud L -->
+      <div class="glass-card pricing-card reveal reveal-delay-3">
+        <div class="pricing-plan-name">Cloud L</div>
+        <div class="pricing-plan-desc">For high-traffic services</div>
+        <div class="pricing-amount">
+          <span class="pricing-currency">$</span>
+          <span class="pricing-value">9</span>
+          <span class="pricing-period">/mo</span>
+        </div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 8 GB RAM</li>
+          <li><span class="check">✓</span> 4 vCPU Cores</li>
+          <li><span class="check">✓</span> 80 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%;" target="_blank">Deploy Now</a>
+      </div>
+      <!-- Cloud XL -->
+      <div class="glass-card pricing-card reveal reveal-delay-4">
+        <div class="pricing-plan-name">Cloud XL</div>
+        <div class="pricing-plan-desc">Maximum cloud power</div>
+        <div class="pricing-amount">
+          <span class="pricing-currency">$</span>
+          <span class="pricing-value">16</span>
+          <span class="pricing-period">/mo</span>
+        </div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 16 GB RAM</li>
+          <li><span class="check">✓</span> 6 vCPU Cores</li>
+          <li><span class="check">✓</span> 120 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%;" target="_blank">Deploy Now</a>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;" class="reveal">
+      <a href="pricing.html" class="btn btn-outline">View All Plans →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVER LOCATIONS -->
+<section class="section map-section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">🌍 Network</div>
+      <h2 class="section-title">Global Datacenter Locations</h2>
+      <p class="section-desc">Strategically positioned servers for minimal latency and maximum reliability.</p>
+    </div>
+
+    <!-- MAP -->
+    <div class="world-map-container reveal" style="position:relative; min-height:300px;">
+      <!-- Simple SVG World Map Outline -->
+      <svg viewBox="0 0 1000 500" class="world-map-svg" xmlns="http://www.w3.org/2000/svg">
+        <!-- Simplified world map paths -->
+        <g fill="none" stroke="rgba(30,144,255,0.3)" stroke-width="0.8">
+          <!-- North America -->
+          <path d="M150,120 L170,100 L200,95 L230,100 L260,90 L280,95 L290,110 L280,130 L270,150 L260,180 L240,200 L220,210 L200,220 L180,210 L160,190 L140,170 L130,150 Z"/>
+          <!-- South America -->
+          <path d="M240,260 L260,250 L280,260 L290,290 L285,320 L275,350 L260,380 L250,390 L240,370 L235,340 L230,310 L225,280 Z"/>
+          <!-- Europe -->
+          <path d="M440,100 L460,90 L480,85 L500,90 L520,95 L530,110 L525,130 L510,140 L490,145 L470,140 L455,130 L445,115 Z"/>
+          <!-- Africa -->
+          <path d="M460,180 L480,170 L510,175 L530,190 L540,220 L535,260 L525,290 L510,320 L490,340 L475,330 L465,300 L455,260 L450,220 L455,190 Z"/>
+          <!-- Asia -->
+          <path d="M540,80 L580,70 L630,65 L680,70 L720,80 L750,100 L770,120 L780,150 L770,170 L740,180 L700,185 L660,180 L620,170 L590,155 L560,135 L545,110 Z"/>
+          <!-- Middle East -->
+          <path d="M555,150 L575,145 L595,150 L605,165 L600,180 L585,185 L570,180 L560,168 Z"/>
+          <!-- Australia -->
+          <path d="M760,300 L790,290 L820,295 L840,310 L845,330 L835,345 L810,350 L785,345 L770,330 L760,315 Z"/>
+        </g>
+        <!-- Grid lines -->
+        <g stroke="rgba(30,144,255,0.05)" stroke-width="0.5">
+          <line x1="0" y1="125" x2="1000" y2="125"/>
+          <line x1="0" y1="250" x2="1000" y2="250"/>
+          <line x1="0" y1="375" x2="1000" y2="375"/>
+          <line x1="250" y1="0" x2="250" y2="500"/>
+          <line x1="500" y1="0" x2="500" y2="500"/>
+          <line x1="750" y1="0" x2="750" y2="500"/>
+        </g>
+      </svg>
+
+      <!-- Frankfurt Pin -->
+      <div class="map-pin" style="top: 26%; left: 49%;">
+        <div class="map-pin-dot"></div>
+        <div class="map-pin-label">
+          Frankfurt, DE
+          <small>Europe</small>
+        </div>
+      </div>
+
+      <!-- Dubai Pin -->
+      <div class="map-pin" style="top: 38%; left: 59%;">
+        <div class="map-pin-dot"></div>
+        <div class="map-pin-label">
+          Dubai, UAE
+          <small>Middle East</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location Cards -->
+    <div class="locations-grid reveal">
+      <div class="glass-card location-card">
+        <div class="location-flag">🇩🇪</div>
+        <div class="location-info">
+          <h3>Frankfurt, Germany</h3>
+          <p>Tier III+ datacenter with direct peering to major European networks. Ideal for EU-based users.</p>
+          <div class="location-status"><span class="dot"></span> Online — Low Latency</div>
+        </div>
+      </div>
+      <div class="glass-card location-card">
+        <div class="location-flag">🇦🇪</div>
+        <div class="location-info">
+          <h3>Dubai, UAE</h3>
+          <p>Premium datacenter with direct connectivity to Middle East, Asia, and Africa networks.</p>
+          <div class="location-status"><span class="dot"></span> Online — Low Latency</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFRASTRUCTURE SPECS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">🔧 Hardware</div>
+      <h2 class="section-title">What Powers SkullHost</h2>
+      <p class="section-desc">Enterprise hardware, carrier-grade networking, and military-grade protection.</p>
+    </div>
+    <div class="specs-grid">
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🔲</div>
+        <div class="spec-info">
+          <h3>AMD EPYC 7502</h3>
+          <p>32-core / 64-thread processors running at 2.5GHz base clock for demanding workloads.</p>
+        </div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🔲</div>
+        <div class="spec-info">
+          <h3>AMD EPYC 7642</h3>
+          <p>48-core processors delivering exceptional multi-threaded performance for enterprise applications.</p>
+        </div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🔲</div>
+        <div class="spec-info">
+          <h3>AMD Ryzen 9 Nodes</h3>
+          <p>High-frequency Ryzen 9 processors optimized for single-threaded gaming workloads.</p>
+        </div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">💾</div>
+        <div class="spec-info">
+          <h3>NVMe SSD Storage</h3>
+          <p>Enterprise-grade NVMe drives with up to 7,000 MB/s sequential read speeds.</p>
+        </div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🌐</div>
+        <div class="spec-info">
+          <h3>10 Gbps Network</h3>
+          <p>Each server connected via 10 Gbps uplink ports for blazing-fast network throughput.</p>
+        </div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🛡️</div>
+        <div class="spec-info">
+          <h3>DDoS Mitigation</h3>
+          <p>Advanced Layer 3 & Layer 7 protection with automatic attack detection and mitigation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">👥 Team</div>
+      <h2 class="section-title">Meet the Team Behind SkullHost</h2>
+      <p class="section-desc">Dedicated professionals working together to provide you with the best hosting experience.</p>
+    </div>
+    <div class="team-grid">
+      <div class="glass-card team-card reveal reveal-delay-1">
+        <div class="team-avatar">👑</div>
+        <h3>Xelvor</h3>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="glass-card team-card reveal reveal-delay-2">
+        <div class="team-avatar">⚡</div>
+        <h3>Dank</h3>
+        <p>Co-Founder</p>
+      </div>
+      <div class="glass-card team-card reveal reveal-delay-3">
+        <div class="team-avatar">🛠️</div>
+        <h3>Guffy</h3>
+        <p>Lead Developer</p>
+      </div>
+      <div class="glass-card team-card reveal reveal-delay-4">
+        <div class="team-avatar">🔧</div>
+        <h3>Talha</h3>
+        <p>System Administrator</p>
+      </div>
+      <div class="glass-card team-card reveal reveal-delay-4">
+        <div class="team-avatar">📊</div>
+        <h3>Dino</h3>
+        <p>Operations Manager</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">❓ FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Quick answers to common questions about SkullHost services.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-question">
+          How fast is server deployment?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Most servers are automatically provisioned and ready to use within 60 seconds of confirmed payment. Our instant deployment system handles OS installation, networking, and configuration automatically.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What payment methods do you accept?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We accept PayPal, credit/debit cards, and cryptocurrency payments. All payments are processed securely through our client area.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you offer DDoS protection?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes! All SkullHost services include enterprise-grade Layer 3 and Layer 7 DDoS protection at no extra cost. Our mitigation systems automatically detect and neutralize attacks in real time.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I upgrade my plan later?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. You can upgrade or downgrade your plan at any time from the client area. Upgrades are applied instantly with prorated billing for the remaining period.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Where are your datacenters located?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">SkullHost operates datacenters in Frankfurt, Germany and Dubai, UAE. Both locations feature Tier III+ infrastructure with redundant power, cooling, and network connectivity.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you offer refunds?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We offer a 48-hour money-back guarantee on most services. If you're not satisfied, contact our support team within 48 hours of purchase for a full refund.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCORD CTA -->
+<section class="section cta-section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-box reveal">
+      <h2>Join the SkullHost Community</h2>
+      <p>Connect with thousands of users, get support, share feedback, and stay updated on the latest news.</p>
+      <div class="cta-buttons">
+        <a href="https://discord.gg/6u8D3s6azJ" class="btn btn-primary btn-lg" target="_blank">💬 Join Discord</a>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-outline btn-lg" target="_blank">Open Client Area</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo" style="font-size:20px;">
+          <span class="skull-icon">☠</span>
+          <span>Skull<span class="brand-accent">Host</span></span>
+        </a>
+        <p>Premium cloud hosting powered by enterprise hardware. Deploy globally with confidence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="vps.html">Cloud VPS</a>
+        <a href="vds.html">VDS Hosting</a>
+        <a href="minecraft-hosting.html">Minecraft Hosting</a>
+        <a href="bot-hosting.html">Bot Hosting</a>
+        <a href="ai-hosting.html">AI Hosting</a>
+        <a href="web-hosting.html">Web Hosting</a>
+        <a href="dedicated.html">Dedicated Servers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="knowledgebase.html">Knowledgebase</a>
+        <a href="https://status.skullhost.cloud" target="_blank">Status Page</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://discord.gg/6u8D3s6azJ" target="_blank">Discord</a>
+        <a href="https://clientarea.skullhost.cloud" target="_blank">Client Area</a>
+        <a href="contact.html">Support</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SkullHost. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://status.skullhost.cloud" target="_blank">Status</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
