@@ -1553,3 +1553,79 @@ transition:0.3s;
 .game-card a:hover{
 background:#0f6ed4;
 }
+
+
+/* ===== MINECRAFT PRICING THEME ===== */
+
+.minecraft-pricing .pricing-card{
+border-color: rgba(34,139,34,0.18);
+}
+
+.minecraft-pricing .pricing-card:hover{
+border-color:#22c55e;
+box-shadow:0 20px 60px rgba(34,139,34,0.15);
+}
+
+.minecraft-pricing .pricing-currency{
+color:#22c55e;
+}
+
+.minecraft-pricing .pricing-value{
+color:#ffffff;
+}
+
+.minecraft-pricing .pricing-features .check{
+color:#22c55e;
+}
+
+/* POPULAR PLAN */
+
+.minecraft-pricing .pricing-card.popular{
+border-color:#22c55e;
+box-shadow:0 0 50px rgba(34,139,34,0.25);
+}
+
+.minecraft-pricing .pricing-card.popular::after{
+content:"Best Value";
+background:linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+/* BUTTON STYLE */
+
+.minecraft-pricing .btn-primary{
+background:linear-gradient(135deg,#22c55e,#16a34a);
+box-shadow:0 6px 30px rgba(34,139,34,0.3);
+}
+
+.minecraft-pricing .btn-primary:hover{
+box-shadow:0 10px 40px rgba(34,139,34,0.45);
+}
+
+.minecraft-pricing .btn-secondary{
+color:#22c55e;
+border-color:rgba(34,139,34,0.25);
+background:rgba(34,139,34,0.08);
+}
+
+.minecraft-pricing .btn-secondary:hover{
+background:rgba(34,139,34,0.15);
+border-color:#22c55e;
+}
+
+/* HERO MINECRAFT GLOW */
+
+.page-hero.minecraft-theme::after{
+background: radial-gradient(circle, rgba(34,139,34,0.12) 0%, transparent 70%);
+}
+
+/* FEATURES ICON */
+
+.spec-card.minecraft-spec .spec-icon{
+background:rgba(34,139,34,0.08);
+border-color:rgba(34,139,34,0.2);
+}
+
+.spec-card.minecraft-spec:hover .spec-icon{
+background:rgba(34,139,34,0.15);
+box-shadow:0 0 25px rgba(34,139,34,0.3);
+}
