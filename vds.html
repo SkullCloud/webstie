@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VDS Hosting — SkullHost</title>
+  <meta name="description" content="Virtual Dedicated Servers with guaranteed resources. AMD EPYC powered, NVMe SSD, from $6/month.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☠</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader-wrapper"><div class="loader"><div class="loader-skull">☠</div><div class="loader-bar"><div class="loader-bar-inner"></div></div></div></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo"><span class="skull-icon">☠</span><span>Skull<span class="brand-accent">Host</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle active">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="vps.html"><span class="dd-icon">⚡</span> Cloud VPS</a>
+          <a href="vds.html"><span class="dd-icon">🖥️</span> VDS Hosting</a>
+          <a href="minecraft-hosting.html"><span class="dd-icon">🎮</span> Minecraft Hosting</a>
+          <a href="bot-hosting.html"><span class="dd-icon">🤖</span> Bot Hosting</a>
+          <a href="ai-hosting.html"><span class="dd-icon">🧠</span> AI Hosting</a>
+          <a href="web-hosting.html"><span class="dd-icon">🌐</span> Web Hosting</a>
+          <a href="cloud-hosting.html"><span class="dd-icon">☁️</span> Cloud Hosting</a>
+          <a href="dedicated.html"><span class="dd-icon">🏗️</span> Dedicated Servers</a>
+        </div>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary btn-sm" target="_blank">Client Area</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">Deploy Server</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">🏠 Home</a>
+  <div class="mobile-menu-section">Services</div>
+  <a href="vps.html">⚡ Cloud VPS</a><a href="vds.html">🖥️ VDS Hosting</a><a href="minecraft-hosting.html">🎮 Minecraft</a><a href="bot-hosting.html">🤖 Bot Hosting</a><a href="ai-hosting.html">🧠 AI Hosting</a><a href="web-hosting.html">🌐 Web Hosting</a><a href="cloud-hosting.html">☁️ Cloud Hosting</a><a href="dedicated.html">🏗️ Dedicated</a>
+  <div class="mobile-menu-section">Company</div>
+  <a href="pricing.html">💰 Pricing</a><a href="about.html">👥 About</a><a href="contact.html">📬 Contact</a>
+  <div style="padding:16px;"><a href="https://clientarea.skullhost.cloud" class="btn btn-primary" style="width:100%;" target="_blank">Client Area</a></div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h1>VDS <span class="gradient-text">Hosting</span></h1>
+  <p>Virtual Dedicated Servers with guaranteed CPU and RAM resources. The power of dedicated hardware with cloud flexibility.</p>
+</section>
+
+<!-- VDS INFO -->
+<section class="section-sm">
+  <div class="container">
+    <div class="specs-grid">
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🔒</div>
+        <div class="spec-info"><h3>Guaranteed Resources</h3><p>Dedicated CPU cores and RAM — no overprovisioning.</p></div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">💾</div>
+        <div class="spec-info"><h3>NVMe SSD</h3><p>Enterprise NVMe storage for blazing I/O performance.</p></div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🛡️</div>
+        <div class="spec-info"><h3>L3 + L7 DDoS</h3><p>Full-spectrum DDoS protection included free.</p></div>
+      </div>
+      <div class="glass-card spec-card reveal">
+        <div class="spec-icon">🌐</div>
+        <div class="spec-info"><h3>10 Gbps Uplink</h3><p>Massive bandwidth for data-intensive applications.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VDS PLANS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">💰 Plans</div>
+      <h2 class="section-title">VDS Hosting Plans</h2>
+      <p class="section-desc">Dedicated resources that scale. Choose the right VDS for your workload.</p>
+    </div>
+
+    <!-- First Row: 3 cards -->
+    <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 20px;">
+      <div class="glass-card pricing-card reveal">
+        <div class="pricing-plan-name">VDS Nano</div>
+        <div class="pricing-plan-desc">Light workloads</div>
+        <div class="pricing-amount"><span class="pricing-currency">$</span><span class="pricing-value">6</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 4 GB RAM</li>
+          <li><span class="check">✓</span> 2 vCPU Cores</li>
+          <li><span class="check">✓</span> 40 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%;" target="_blank">Order Now</a>
+      </div>
+      <div class="glass-card pricing-card reveal">
+        <div class="pricing-plan-name">VDS Starter</div>
+        <div class="pricing-plan-desc">Growing projects</div>
+        <div class="pricing-amount"><span class="pricing-currency">$</span><span class="pricing-value">10</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 8 GB RAM</li>
+          <li><span class="check">✓</span> 4 vCPU Cores</li>
+          <li><span class="check">✓</span> 80 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%;" target="_blank">Order Now</a>
+      </div>
+      <div class="glass-card pricing-card popular reveal">
+        <div class="pricing-plan-name">VDS Advanced</div>
+        <div class="pricing-plan-desc">Production ready</div>
+        <div class="pricing-amount"><span class="pricing-currency">$</span><span class="pricing-value">18</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 16 GB RAM</li>
+          <li><span class="check">✓</span> 6 vCPU Cores</li>
+          <li><span class="check">✓</span> 120 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-primary" style="width:100%;" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <!-- Second Row: 2 cards centered -->
+    <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); max-width: 600px; margin: 0 auto;">
+      <div class="glass-card pricing-card reveal">
+        <div class="pricing-plan-name">VDS Pro</div>
+        <div class="pricing-plan-desc">Heavy workloads</div>
+        <div class="pricing-amount"><span class="pricing-currency">$</span><span class="pricing-value">32</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 32 GB RAM</li>
+          <li><span class="check">✓</span> 8 vCPU Cores</li>
+          <li><span class="check">✓</span> 200 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%;" target="_blank">Order Now</a>
+      </div>
+      <div class="glass-card pricing-card reveal">
+        <div class="pricing-plan-name">VDS Ultra</div>
+        <div class="pricing-plan-desc">Enterprise-grade</div>
+        <div class="pricing-amount"><span class="pricing-currency">$</span><span class="pricing-value">55</span><span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 64 GB RAM</li>
+          <li><span class="check">✓</span> 12 vCPU Cores</li>
+          <li><span class="check">✓</span> 400 GB NVMe SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> DDoS Protection</li>
+        </ul>
+        <a href="https://clientarea.skullhost.cloud" class="btn btn-secondary" style="width:100%;" target="_blank">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-box reveal">
+      <h2>Need Custom VDS Configuration?</h2>
+      <p>Contact our sales team for custom dedicated resource allocations tailored to your needs.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Sales</a>
+        <a href="https://discord.gg/6u8D3s6azJ" class="btn btn-outline btn-lg" target="_blank">💬 Join Discord</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="navbar-logo" style="font-size:20px;"><span class="skull-icon">☠</span><span>Skull<span class="brand-accent">Host</span></span></a><p>Premium cloud hosting powered by enterprise hardware.</p></div>
+      <div class="footer-col"><h4>Services</h4><a href="vps.html">Cloud VPS</a><a href="vds.html">VDS Hosting</a><a href="minecraft-hosting.html">Minecraft</a><a href="bot-hosting.html">Bot Hosting</a><a href="ai-hosting.html">AI Hosting</a><a href="web-hosting.html">Web Hosting</a><a href="dedicated.html">Dedicated</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="knowledgebase.html">Knowledgebase</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-col"><h4>Connect</h4><a href="https://discord.gg/6u8D3s6azJ" target="_blank">Discord</a><a href="https://clientarea.skullhost.cloud" target="_blank">Client Area</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 SkullHost. All rights reserved.</span><div class="footer-bottom-links"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
